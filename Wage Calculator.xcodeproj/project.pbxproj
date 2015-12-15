@@ -1,0 +1,880 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C54424721C0E0B69000B87C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424711C0E0B69000B87C8 /* AppDelegate.swift */; };
+		C54424741C0E0B69000B87C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424731C0E0B69000B87C8 /* ViewController.swift */; };
+		C54424771C0E0B69000B87C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54424751C0E0B69000B87C8 /* Main.storyboard */; };
+		C544247C1C0E0B69000B87C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C544247B1C0E0B69000B87C8 /* Assets.xcassets */; };
+		C544247F1C0E0B69000B87C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C544247D1C0E0B69000B87C8 /* LaunchScreen.storyboard */; };
+		C544248A1C0E0B6A000B87C8 /* Wage_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424891C0E0B6A000B87C8 /* Wage_CalculatorTests.swift */; };
+		C54424951C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424941C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift */; };
+		C54424A91C0E0B97000B87C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424A81C0E0B97000B87C8 /* AppDelegate.swift */; };
+		C54424AB1C0E0B97000B87C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424AA1C0E0B97000B87C8 /* ViewController.swift */; };
+		C54424AD1C0E0B97000B87C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54424AC1C0E0B97000B87C8 /* Assets.xcassets */; };
+		C54424B01C0E0B97000B87C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54424AE1C0E0B97000B87C8 /* Main.storyboard */; };
+		C54424BB1C0E0B98000B87C8 /* Wage_Calculator_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424BA1C0E0B98000B87C8 /* Wage_Calculator_MacTests.swift */; };
+		C54424C61C0E0B98000B87C8 /* Wage_Calculator_MacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424C51C0E0B98000B87C8 /* Wage_Calculator_MacUITests.swift */; };
+		C54424D31C0E2E41000B87C8 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424D21C0E2E41000B87C8 /* Timer.swift */; };
+		C54424D41C0E2E41000B87C8 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424D21C0E2E41000B87C8 /* Timer.swift */; };
+		C5A49BDB1C0E5822005DFDF7 /* MoneyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49BDA1C0E5822005DFDF7 /* MoneyCalculator.swift */; };
+		C5A49BDC1C0E5A3C005DFDF7 /* MoneyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49BDA1C0E5822005DFDF7 /* MoneyCalculator.swift */; };
+		C5A49BDE1C0F41FC005DFDF7 /* BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49BDD1C0F41FC005DFDF7 /* BackgroundManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C54424861C0E0B6A000B87C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54424661C0E0B69000B87C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C544246D1C0E0B69000B87C8;
+			remoteInfo = "Wage Calculator";
+		};
+		C54424911C0E0B6A000B87C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54424661C0E0B69000B87C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C544246D1C0E0B69000B87C8;
+			remoteInfo = "Wage Calculator";
+		};
+		C54424B71C0E0B98000B87C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54424661C0E0B69000B87C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54424A51C0E0B97000B87C8;
+			remoteInfo = "Wage Calculator-Mac";
+		};
+		C54424C21C0E0B98000B87C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54424661C0E0B69000B87C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54424A51C0E0B97000B87C8;
+			remoteInfo = "Wage Calculator-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C544246E1C0E0B69000B87C8 /* Wage Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wage Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54424711C0E0B69000B87C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C54424731C0E0B69000B87C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C54424761C0E0B69000B87C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C544247B1C0E0B69000B87C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C544247E1C0E0B69000B87C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C54424801C0E0B69000B87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54424851C0E0B6A000B87C8 /* Wage CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wage CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54424891C0E0B6A000B87C8 /* Wage_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage_CalculatorTests.swift; sourceTree = "<group>"; };
+		C544248B1C0E0B6A000B87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54424901C0E0B6A000B87C8 /* Wage CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wage CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54424941C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage_CalculatorUITests.swift; sourceTree = "<group>"; };
+		C54424961C0E0B6A000B87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54424A61C0E0B97000B87C8 /* Wage Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wage Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54424A81C0E0B97000B87C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C54424AA1C0E0B97000B87C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C54424AC1C0E0B97000B87C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C54424AF1C0E0B97000B87C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C54424B11C0E0B97000B87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54424B61C0E0B98000B87C8 /* Wage Calculator-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wage Calculator-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54424BA1C0E0B98000B87C8 /* Wage_Calculator_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage_Calculator_MacTests.swift; sourceTree = "<group>"; };
+		C54424BC1C0E0B98000B87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54424C11C0E0B98000B87C8 /* Wage Calculator-MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wage Calculator-MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54424C51C0E0B98000B87C8 /* Wage_Calculator_MacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage_Calculator_MacUITests.swift; sourceTree = "<group>"; };
+		C54424C71C0E0B98000B87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54424D21C0E2E41000B87C8 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		C5A49BDA1C0E5822005DFDF7 /* MoneyCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyCalculator.swift; sourceTree = "<group>"; };
+		C5A49BDD1C0F41FC005DFDF7 /* BackgroundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C544246B1C0E0B69000B87C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424821C0E0B6A000B87C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C544248D1C0E0B6A000B87C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424A31C0E0B97000B87C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424B31C0E0B98000B87C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424BE1C0E0B98000B87C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C54424651C0E0B69000B87C8 = {
+			isa = PBXGroup;
+			children = (
+				C54424D11C0E0BD9000B87C8 /* Classes */,
+				C544246F1C0E0B69000B87C8 /* Products */,
+				C54424701C0E0B69000B87C8 /* Wage Calculator */,
+				C54424A71C0E0B97000B87C8 /* Wage Calculator-Mac */,
+				C54424B91C0E0B98000B87C8 /* Wage Calculator-MacTests */,
+				C54424C41C0E0B98000B87C8 /* Wage Calculator-MacUITests */,
+				C54424881C0E0B6A000B87C8 /* Wage CalculatorTests */,
+				C54424931C0E0B6A000B87C8 /* Wage CalculatorUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		C544246F1C0E0B69000B87C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C544246E1C0E0B69000B87C8 /* Wage Calc.app */,
+				C54424851C0E0B6A000B87C8 /* Wage CalculatorTests.xctest */,
+				C54424901C0E0B6A000B87C8 /* Wage CalculatorUITests.xctest */,
+				C54424A61C0E0B97000B87C8 /* Wage Calculator.app */,
+				C54424B61C0E0B98000B87C8 /* Wage Calculator-MacTests.xctest */,
+				C54424C11C0E0B98000B87C8 /* Wage Calculator-MacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54424701C0E0B69000B87C8 /* Wage Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				C54424711C0E0B69000B87C8 /* AppDelegate.swift */,
+				C54424731C0E0B69000B87C8 /* ViewController.swift */,
+				C54424751C0E0B69000B87C8 /* Main.storyboard */,
+				C544247B1C0E0B69000B87C8 /* Assets.xcassets */,
+				C544247D1C0E0B69000B87C8 /* LaunchScreen.storyboard */,
+				C54424801C0E0B69000B87C8 /* Info.plist */,
+				C5A49BDD1C0F41FC005DFDF7 /* BackgroundManager.swift */,
+			);
+			path = "Wage Calculator";
+			sourceTree = "<group>";
+		};
+		C54424881C0E0B6A000B87C8 /* Wage CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C54424891C0E0B6A000B87C8 /* Wage_CalculatorTests.swift */,
+				C544248B1C0E0B6A000B87C8 /* Info.plist */,
+			);
+			path = "Wage CalculatorTests";
+			sourceTree = "<group>";
+		};
+		C54424931C0E0B6A000B87C8 /* Wage CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C54424941C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift */,
+				C54424961C0E0B6A000B87C8 /* Info.plist */,
+			);
+			path = "Wage CalculatorUITests";
+			sourceTree = "<group>";
+		};
+		C54424A71C0E0B97000B87C8 /* Wage Calculator-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				C54424A81C0E0B97000B87C8 /* AppDelegate.swift */,
+				C54424AA1C0E0B97000B87C8 /* ViewController.swift */,
+				C54424AC1C0E0B97000B87C8 /* Assets.xcassets */,
+				C54424AE1C0E0B97000B87C8 /* Main.storyboard */,
+				C54424B11C0E0B97000B87C8 /* Info.plist */,
+			);
+			path = "Wage Calculator-Mac";
+			sourceTree = "<group>";
+		};
+		C54424B91C0E0B98000B87C8 /* Wage Calculator-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				C54424BA1C0E0B98000B87C8 /* Wage_Calculator_MacTests.swift */,
+				C54424BC1C0E0B98000B87C8 /* Info.plist */,
+			);
+			path = "Wage Calculator-MacTests";
+			sourceTree = "<group>";
+		};
+		C54424C41C0E0B98000B87C8 /* Wage Calculator-MacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C54424C51C0E0B98000B87C8 /* Wage_Calculator_MacUITests.swift */,
+				C54424C71C0E0B98000B87C8 /* Info.plist */,
+			);
+			path = "Wage Calculator-MacUITests";
+			sourceTree = "<group>";
+		};
+		C54424D11C0E0BD9000B87C8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C54424D21C0E2E41000B87C8 /* Timer.swift */,
+				C5A49BDA1C0E5822005DFDF7 /* MoneyCalculator.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C544246D1C0E0B69000B87C8 /* Wage Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54424991C0E0B6A000B87C8 /* Build configuration list for PBXNativeTarget "Wage Calculator" */;
+			buildPhases = (
+				C544246A1C0E0B69000B87C8 /* Sources */,
+				C544246B1C0E0B69000B87C8 /* Frameworks */,
+				C544246C1C0E0B69000B87C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wage Calculator";
+			productName = "Wage Calculator";
+			productReference = C544246E1C0E0B69000B87C8 /* Wage Calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C54424841C0E0B6A000B87C8 /* Wage CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C544249C1C0E0B6A000B87C8 /* Build configuration list for PBXNativeTarget "Wage CalculatorTests" */;
+			buildPhases = (
+				C54424811C0E0B6A000B87C8 /* Sources */,
+				C54424821C0E0B6A000B87C8 /* Frameworks */,
+				C54424831C0E0B6A000B87C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54424871C0E0B6A000B87C8 /* PBXTargetDependency */,
+			);
+			name = "Wage CalculatorTests";
+			productName = "Wage CalculatorTests";
+			productReference = C54424851C0E0B6A000B87C8 /* Wage CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C544248F1C0E0B6A000B87C8 /* Wage CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C544249F1C0E0B6A000B87C8 /* Build configuration list for PBXNativeTarget "Wage CalculatorUITests" */;
+			buildPhases = (
+				C544248C1C0E0B6A000B87C8 /* Sources */,
+				C544248D1C0E0B6A000B87C8 /* Frameworks */,
+				C544248E1C0E0B6A000B87C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54424921C0E0B6A000B87C8 /* PBXTargetDependency */,
+			);
+			name = "Wage CalculatorUITests";
+			productName = "Wage CalculatorUITests";
+			productReference = C54424901C0E0B6A000B87C8 /* Wage CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C54424A51C0E0B97000B87C8 /* Wage Calculator-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54424C81C0E0B98000B87C8 /* Build configuration list for PBXNativeTarget "Wage Calculator-Mac" */;
+			buildPhases = (
+				C54424A21C0E0B97000B87C8 /* Sources */,
+				C54424A31C0E0B97000B87C8 /* Frameworks */,
+				C54424A41C0E0B97000B87C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wage Calculator-Mac";
+			productName = "Wage Calculator-Mac";
+			productReference = C54424A61C0E0B97000B87C8 /* Wage Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C54424B51C0E0B98000B87C8 /* Wage Calculator-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54424CB1C0E0B98000B87C8 /* Build configuration list for PBXNativeTarget "Wage Calculator-MacTests" */;
+			buildPhases = (
+				C54424B21C0E0B98000B87C8 /* Sources */,
+				C54424B31C0E0B98000B87C8 /* Frameworks */,
+				C54424B41C0E0B98000B87C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54424B81C0E0B98000B87C8 /* PBXTargetDependency */,
+			);
+			name = "Wage Calculator-MacTests";
+			productName = "Wage Calculator-MacTests";
+			productReference = C54424B61C0E0B98000B87C8 /* Wage Calculator-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C54424C01C0E0B98000B87C8 /* Wage Calculator-MacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54424CE1C0E0B98000B87C8 /* Build configuration list for PBXNativeTarget "Wage Calculator-MacUITests" */;
+			buildPhases = (
+				C54424BD1C0E0B98000B87C8 /* Sources */,
+				C54424BE1C0E0B98000B87C8 /* Frameworks */,
+				C54424BF1C0E0B98000B87C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C54424C31C0E0B98000B87C8 /* PBXTargetDependency */,
+			);
+			name = "Wage Calculator-MacUITests";
+			productName = "Wage Calculator-MacUITests";
+			productReference = C54424C11C0E0B98000B87C8 /* Wage Calculator-MacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54424661C0E0B69000B87C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Brandon Jenniges";
+				TargetAttributes = {
+					C544246D1C0E0B69000B87C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					C54424841C0E0B6A000B87C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C544246D1C0E0B69000B87C8;
+					};
+					C544248F1C0E0B6A000B87C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C544246D1C0E0B69000B87C8;
+					};
+					C54424A51C0E0B97000B87C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					C54424B51C0E0B98000B87C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C54424A51C0E0B97000B87C8;
+					};
+					C54424C01C0E0B98000B87C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = C54424A51C0E0B97000B87C8;
+					};
+				};
+			};
+			buildConfigurationList = C54424691C0E0B69000B87C8 /* Build configuration list for PBXProject "Wage Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C54424651C0E0B69000B87C8;
+			productRefGroup = C544246F1C0E0B69000B87C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C544246D1C0E0B69000B87C8 /* Wage Calculator */,
+				C54424841C0E0B6A000B87C8 /* Wage CalculatorTests */,
+				C544248F1C0E0B6A000B87C8 /* Wage CalculatorUITests */,
+				C54424A51C0E0B97000B87C8 /* Wage Calculator-Mac */,
+				C54424B51C0E0B98000B87C8 /* Wage Calculator-MacTests */,
+				C54424C01C0E0B98000B87C8 /* Wage Calculator-MacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C544246C1C0E0B69000B87C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C544247F1C0E0B69000B87C8 /* LaunchScreen.storyboard in Resources */,
+				C544247C1C0E0B69000B87C8 /* Assets.xcassets in Resources */,
+				C54424771C0E0B69000B87C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424831C0E0B6A000B87C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C544248E1C0E0B6A000B87C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424A41C0E0B97000B87C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54424AD1C0E0B97000B87C8 /* Assets.xcassets in Resources */,
+				C54424B01C0E0B97000B87C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424B41C0E0B98000B87C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424BF1C0E0B98000B87C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C544246A1C0E0B69000B87C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A49BDE1C0F41FC005DFDF7 /* BackgroundManager.swift in Sources */,
+				C54424D31C0E2E41000B87C8 /* Timer.swift in Sources */,
+				C54424741C0E0B69000B87C8 /* ViewController.swift in Sources */,
+				C5A49BDB1C0E5822005DFDF7 /* MoneyCalculator.swift in Sources */,
+				C54424721C0E0B69000B87C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424811C0E0B6A000B87C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C544248A1C0E0B6A000B87C8 /* Wage_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C544248C1C0E0B6A000B87C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54424951C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424A21C0E0B97000B87C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54424D41C0E2E41000B87C8 /* Timer.swift in Sources */,
+				C54424AB1C0E0B97000B87C8 /* ViewController.swift in Sources */,
+				C5A49BDC1C0E5A3C005DFDF7 /* MoneyCalculator.swift in Sources */,
+				C54424A91C0E0B97000B87C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424B21C0E0B98000B87C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54424BB1C0E0B98000B87C8 /* Wage_Calculator_MacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54424BD1C0E0B98000B87C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54424C61C0E0B98000B87C8 /* Wage_Calculator_MacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C54424871C0E0B6A000B87C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C544246D1C0E0B69000B87C8 /* Wage Calculator */;
+			targetProxy = C54424861C0E0B6A000B87C8 /* PBXContainerItemProxy */;
+		};
+		C54424921C0E0B6A000B87C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C544246D1C0E0B69000B87C8 /* Wage Calculator */;
+			targetProxy = C54424911C0E0B6A000B87C8 /* PBXContainerItemProxy */;
+		};
+		C54424B81C0E0B98000B87C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54424A51C0E0B97000B87C8 /* Wage Calculator-Mac */;
+			targetProxy = C54424B71C0E0B98000B87C8 /* PBXContainerItemProxy */;
+		};
+		C54424C31C0E0B98000B87C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54424A51C0E0B97000B87C8 /* Wage Calculator-Mac */;
+			targetProxy = C54424C21C0E0B98000B87C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C54424751C0E0B69000B87C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54424761C0E0B69000B87C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C544247D1C0E0B69000B87C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C544247E1C0E0B69000B87C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C54424AE1C0E0B97000B87C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54424AF1C0E0B97000B87C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C54424971C0E0B6A000B87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C54424981C0E0B6A000B87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C544249A1C0E0B6A000B87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wage Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator";
+				PRODUCT_NAME = "Wage Calc";
+			};
+			name = Debug;
+		};
+		C544249B1C0E0B6A000B87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wage Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator";
+				PRODUCT_NAME = "Wage Calc";
+			};
+			name = Release;
+		};
+		C544249D1C0E0B6A000B87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wage CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wage Calculator.app/Wage Calculator";
+			};
+			name = Debug;
+		};
+		C544249E1C0E0B6A000B87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Wage CalculatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wage Calculator.app/Wage Calculator";
+			};
+			name = Release;
+		};
+		C54424A01C0E0B6A000B87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wage CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wage Calculator";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C54424A11C0E0B6A000B87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Wage CalculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Wage Calculator";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		C54424C91C0E0B98000B87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Wage Calculator-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator-Mac";
+				PRODUCT_NAME = "Wage Calculator";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C54424CA1C0E0B98000B87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Wage Calculator-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator-Mac";
+				PRODUCT_NAME = "Wage Calculator";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C54424CC1C0E0B98000B87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Wage Calculator-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wage Calculator-Mac.app/Contents/MacOS/Wage Calculator-Mac";
+			};
+			name = Debug;
+		};
+		C54424CD1C0E0B98000B87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Wage Calculator-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wage Calculator-Mac.app/Contents/MacOS/Wage Calculator-Mac";
+			};
+			name = Release;
+		};
+		C54424CF1C0E0B98000B87C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Wage Calculator-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = "Wage Calculator-Mac";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C54424D01C0E0B98000B87C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Wage Calculator-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = "Wage Calculator-Mac";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C54424691C0E0B69000B87C8 /* Build configuration list for PBXProject "Wage Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54424971C0E0B6A000B87C8 /* Debug */,
+				C54424981C0E0B6A000B87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54424991C0E0B6A000B87C8 /* Build configuration list for PBXNativeTarget "Wage Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C544249A1C0E0B6A000B87C8 /* Debug */,
+				C544249B1C0E0B6A000B87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C544249C1C0E0B6A000B87C8 /* Build configuration list for PBXNativeTarget "Wage CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C544249D1C0E0B6A000B87C8 /* Debug */,
+				C544249E1C0E0B6A000B87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C544249F1C0E0B6A000B87C8 /* Build configuration list for PBXNativeTarget "Wage CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54424A01C0E0B6A000B87C8 /* Debug */,
+				C54424A11C0E0B6A000B87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54424C81C0E0B98000B87C8 /* Build configuration list for PBXNativeTarget "Wage Calculator-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54424C91C0E0B98000B87C8 /* Debug */,
+				C54424CA1C0E0B98000B87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54424CB1C0E0B98000B87C8 /* Build configuration list for PBXNativeTarget "Wage Calculator-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54424CC1C0E0B98000B87C8 /* Debug */,
+				C54424CD1C0E0B98000B87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54424CE1C0E0B98000B87C8 /* Build configuration list for PBXNativeTarget "Wage Calculator-MacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54424CF1C0E0B98000B87C8 /* Debug */,
+				C54424D01C0E0B98000B87C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54424661C0E0B69000B87C8 /* Project object */;
+}
