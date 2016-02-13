@@ -1,5 +1,7 @@
 # Wage Calculator
 
+[![Build Status](https://travis-ci.org/steveholt55/Wage-Calculator-Swift.svg)](https://travis-ci.org/steveholt55/Wage-Calculator-Swift)
+
 In development app iOS and Mac application that allows you to keep track of how fast you're earning money.
 
 Pre-requisites
