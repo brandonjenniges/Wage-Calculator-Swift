@@ -1,6 +1,6 @@
 # Wage Calculator
 
-In development app that allows you to keep track of how fast you're earning money.
+In development app iOS and Mac application that allows you to keep track of how fast you're earning money.
 
 Pre-requisites
 --------------
@@ -8,7 +8,9 @@ Pre-requisites
 
 Screenshots
 -----------
-TODO
+
+![Phone](screenshots/wage-1.png "Screen 1")
+![Phone](screenshots/wage-2.png "Screen 2")
 
 Android Version
 --------------
