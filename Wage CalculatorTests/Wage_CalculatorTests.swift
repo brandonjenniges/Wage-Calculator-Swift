@@ -3,7 +3,7 @@
 //
 
 import XCTest
-@testable import Wage_Calculator
+@testable import Wage_Calc
 
 class Wage_CalculatorTests: XCTestCase {
     

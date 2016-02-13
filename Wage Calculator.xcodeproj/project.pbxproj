@@ -25,6 +25,7 @@
 		C5A49BDB1C0E5822005DFDF7 /* MoneyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49BDA1C0E5822005DFDF7 /* MoneyCalculator.swift */; };
 		C5A49BDC1C0E5A3C005DFDF7 /* MoneyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49BDA1C0E5822005DFDF7 /* MoneyCalculator.swift */; };
 		C5A49BDE1C0F41FC005DFDF7 /* BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A49BDD1C0F41FC005DFDF7 /* BackgroundManager.swift */; };
+		FB77CD3A1C6EE3A500643905 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB77CD391C6EE3A500643905 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		C54424D21C0E2E41000B87C8 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		C5A49BDA1C0E5822005DFDF7 /* MoneyCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyCalculator.swift; sourceTree = "<group>"; };
 		C5A49BDD1C0F41FC005DFDF7 /* BackgroundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundManager.swift; sourceTree = "<group>"; };
+		FB77CD391C6EE3A500643905 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 			children = (
 				C54424941C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift */,
 				C54424961C0E0B6A000B87C8 /* Info.plist */,
+				FB77CD391C6EE3A500643905 /* SnapshotHelper.swift */,
 			);
 			path = "Wage CalculatorUITests";
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C54424951C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift in Sources */,
+				FB77CD3A1C6EE3A500643905 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +652,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Wage Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator";
@@ -659,6 +664,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "Wage Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-Calculator";
@@ -674,7 +680,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wage Calculator.app/Wage Calculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wage Calc.app/Wage Calc";
 			};
 			name = Debug;
 		};
@@ -686,7 +692,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brandonjenniges.Wage-CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wage Calculator.app/Wage Calculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wage Calc.app/Wage Calc";
 			};
 			name = Release;
 		};

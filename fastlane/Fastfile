@@ -1,0 +1,48 @@
+fastlane_version "1.57.0"
+
+platform :ios do
+
+  ############################## PRE ##############################
+
+  before_all do
+
+    ensure_git_status_clean
+
+  end
+
+  ######################### PUBLIC LANES ##########################
+
+  lane :test do
+    scan(
+      scheme: "Wage Calculator",
+      clean: true,
+      destination: "platform=iOS Simulator,name=iPhone 6,OS=9.2"
+    )
+  end
+
+  lane :screens do
+    snapshot(
+      scheme: "Wage Calculator",
+      clear_previous_screenshots: true,
+      clean: true,
+      devices: [
+        "iPad Pro",
+        "iPhone 6 Plus",
+        "iPhone 6",
+        "iPhone 5s",
+        "iPhone 4s",
+      ]
+    )
+  end
+
+  ############################# POST ##############################
+
+  after_all do |lane|
+
+  end
+
+  error do |lane, exception|
+    notification(message:"fastlane finished '#{lane}'") # Mac OS X Notification
+  end
+
+end
