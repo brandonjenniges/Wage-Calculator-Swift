@@ -12,7 +12,7 @@
 		C54424771C0E0B69000B87C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54424751C0E0B69000B87C8 /* Main.storyboard */; };
 		C544247C1C0E0B69000B87C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C544247B1C0E0B69000B87C8 /* Assets.xcassets */; };
 		C544247F1C0E0B69000B87C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C544247D1C0E0B69000B87C8 /* LaunchScreen.storyboard */; };
-		C544248A1C0E0B6A000B87C8 /* Wage_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424891C0E0B6A000B87C8 /* Wage_CalculatorTests.swift */; };
+		C544248A1C0E0B6A000B87C8 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424891C0E0B6A000B87C8 /* ViewControllerTests.swift */; };
 		C54424951C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424941C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift */; };
 		C54424A91C0E0B97000B87C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424A81C0E0B97000B87C8 /* AppDelegate.swift */; };
 		C54424AB1C0E0B97000B87C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54424AA1C0E0B97000B87C8 /* ViewController.swift */; };
@@ -68,7 +68,7 @@
 		C544247E1C0E0B69000B87C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C54424801C0E0B69000B87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C54424851C0E0B6A000B87C8 /* Wage CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wage CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C54424891C0E0B6A000B87C8 /* Wage_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage_CalculatorTests.swift; sourceTree = "<group>"; };
+		C54424891C0E0B6A000B87C8 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		C544248B1C0E0B6A000B87C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C54424901C0E0B6A000B87C8 /* Wage CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wage CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54424941C0E0B6A000B87C8 /* Wage_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage_CalculatorUITests.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 		C54424881C0E0B6A000B87C8 /* Wage CalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				C54424891C0E0B6A000B87C8 /* Wage_CalculatorTests.swift */,
+				C54424891C0E0B6A000B87C8 /* ViewControllerTests.swift */,
 				C544248B1C0E0B6A000B87C8 /* Info.plist */,
 			);
 			path = "Wage CalculatorTests";
@@ -474,7 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C544248A1C0E0B6A000B87C8 /* Wage_CalculatorTests.swift in Sources */,
+				C544248A1C0E0B6A000B87C8 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

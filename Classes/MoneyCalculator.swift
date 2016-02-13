@@ -39,7 +39,8 @@ class MoneyCalculator: NSObject {
     }
     
     static func saveWage(wage: Double) {
-        return userDefaults.setDouble(wage, forKey: wageKey)
+        userDefaults.setDouble(wage, forKey: wageKey)
+        userDefaults.synchronize()
     }
     
     func formatStringToCurrency(string: String) -> String? {
