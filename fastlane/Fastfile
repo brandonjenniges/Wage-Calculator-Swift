@@ -1,12 +1,10 @@
-fastlane_version "1.57.0"
+fastlane_version "1.51.0"
 
 platform :ios do
 
   ############################## PRE ##############################
 
   before_all do
-
-    ensure_git_status_clean
 
   end
 
@@ -17,21 +15,6 @@ platform :ios do
       scheme: "Wage Calculator",
       clean: true,
       destination: "platform=iOS Simulator,name=iPhone 6,OS=9.2"
-    )
-  end
-
-  lane :screens do
-    snapshot(
-      scheme: "Wage Calculator",
-      clear_previous_screenshots: true,
-      clean: true,
-      devices: [
-        "iPad Pro",
-        "iPhone 6 Plus",
-        "iPhone 6",
-        "iPhone 5s",
-        "iPhone 4s",
-      ]
     )
   end
 
