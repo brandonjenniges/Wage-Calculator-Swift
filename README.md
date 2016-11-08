@@ -6,7 +6,7 @@ In development app iOS and Mac application that allows you to keep track of how 
 
 Pre-requisites
 --------------
-- Swift 2
+- Swift 3
 
 Screenshots
 -----------
