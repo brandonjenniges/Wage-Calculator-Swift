@@ -34,18 +34,18 @@ class ViewController: UIViewController, TimerProtocol, BackgroundManagerProtocol
     func setupMoneyViewGradient() {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = moneyView.bounds
-        gradient.colors = [UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.0).CGColor, UIColor(red: 0/255.0, green: 160/255.0, blue: 233/255.0, alpha: 0.05).CGColor]
-        moneyView.layer.insertSublayer(gradient, atIndex: 0)
+        gradient.colors = [UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 0.0).cgColor, UIColor(red: 0/255.0, green: 160/255.0, blue: 233/255.0, alpha: 0.05).cgColor]
+        moneyView.layer.insertSublayer(gradient, at: 0)
     }
     
-    func displayWagePrompt(active: Bool) {
+    func displayWagePrompt(_ active: Bool) {
         var inputTextField: UITextField?
         
-        let alertController = UIAlertController(title: "Wage Calculator", message: "Enter a wage or hourly rate that will be used to calculate how much money you are making.", preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Wage Calculator", message: "Enter a wage or hourly rate that will be used to calculate how much money you are making.", preferredStyle: .alert)
         
-        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
-        alertController.addAction(UIAlertAction(title: "Save", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
-            if let newWage = inputTextField!.text, doubleValue = Double(newWage) {
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Save", style: UIAlertActionStyle.default, handler: { (action) -> Void in
+            if let newWage = inputTextField!.text, let doubleValue = Double(newWage) {
                 MoneyCalculator.saveWage(doubleValue)
                 self.moneyCalculator.updateWage()
                 if active {
@@ -53,17 +53,17 @@ class ViewController: UIViewController, TimerProtocol, BackgroundManagerProtocol
                 }
             }
         }))
-        alertController.addTextFieldWithConfigurationHandler({(textField: UITextField!) in
+        alertController.addTextField(configurationHandler: {(textField: UITextField!) in
             textField.placeholder = self.moneyCalculator.formatStringToCurrency("\(MoneyCalculator.getSavedWage())")
-            textField.keyboardType = .DecimalPad
+            textField.keyboardType = .decimalPad
             inputTextField = textField
         })
-        presentViewController(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
     }
 
     // MARK: - Timer Protocol
     
-    func timerDidTick(elapsedSeconds: Int) {
+    func timerDidTick(_ elapsedSeconds: Int) {
         timeLabel.text = timer.getTimeDisplay()
         moneyLabel.text = moneyCalculator.getMoneyDisplay(timer.elapsedSeconds)
     }
@@ -79,14 +79,14 @@ class ViewController: UIViewController, TimerProtocol, BackgroundManagerProtocol
         timer.pauseTimer()
     }
     
-    func managerDidReceiveBackgroundDuration(elapsedSeconds: Int) {
+    func managerDidReceiveBackgroundDuration(_ elapsedSeconds: Int) {
         timer.elapsedSeconds += elapsedSeconds
         timer.startTimer()
     }
 
     // MARK: - Buttons
     
-    @IBAction func play(sender: AnyObject) {
+    @IBAction func play(_ sender: AnyObject) {
         if MoneyCalculator.getSavedWage() > 0 {
             timer.startTimer()
         } else {
@@ -94,15 +94,15 @@ class ViewController: UIViewController, TimerProtocol, BackgroundManagerProtocol
         }
     }
     
-    @IBAction func pause(sender: AnyObject) {
+    @IBAction func pause(_ sender: AnyObject) {
         timer.pauseTimer()
     }
     
-    @IBAction func clear(sender: AnyObject) {
+    @IBAction func clear(_ sender: AnyObject) {
         timer.restartTimer()
     }
     
-    @IBAction func openSettings(sender: AnyObject) {
+    @IBAction func openSettings(_ sender: AnyObject) {
         displayWagePrompt(false)
     }
 }

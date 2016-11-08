@@ -7,17 +7,17 @@ import Foundation
 class MoneyCalculator: NSObject {
 
     var wage: Double = 0.0
-    let formatter = NSNumberFormatter()
+    let formatter = NumberFormatter()
     
     static let wageKey = "savedWage"
-    static let userDefaults = NSUserDefaults.standardUserDefaults()
+    static let userDefaults = UserDefaults.standard
 
     
     override init() {
         
         self.wage = MoneyCalculator.getSavedWage()
         
-        self.formatter.numberStyle = .CurrencyStyle
+        self.formatter.numberStyle = .currency
         self.formatter.minimumIntegerDigits = 1
         self.formatter.minimumFractionDigits = 2
         self.formatter.maximumFractionDigits = 2
@@ -29,23 +29,23 @@ class MoneyCalculator: NSObject {
         self.wage = MoneyCalculator.getSavedWage()
     }
     
-    func getMoneyDisplay(seconds: Int) -> String {
+    func getMoneyDisplay(_ seconds: Int) -> String {
         let factor: Double = Double(seconds) / 3600
-        return "\(formatter.stringFromNumber(wage * factor)!)"
+        return "\(formatter.string(from: NSNumber(value: wage * factor))!)"
     }
     
     static func getSavedWage() -> Double {
-        return userDefaults.doubleForKey(wageKey)
+        return userDefaults.double(forKey: wageKey)
     }
     
-    static func saveWage(wage: Double) {
-        userDefaults.setDouble(wage, forKey: wageKey)
+    static func saveWage(_ wage: Double) {
+        userDefaults.set(wage, forKey: wageKey)
         userDefaults.synchronize()
     }
     
-    func formatStringToCurrency(string: String) -> String? {
+    func formatStringToCurrency(_ string: String) -> String? {
         if let doubleValue = Double(string) {
-            return self.formatter.stringFromNumber(doubleValue)
+            return self.formatter.string(from: NSNumber(value: doubleValue))
         }
         return nil
     }

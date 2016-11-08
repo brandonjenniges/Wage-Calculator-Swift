@@ -40,12 +40,12 @@ class ViewControllerTests: XCTestCase {
     
     func testPauseButton() {
         viewController.pause(self)
-        XCTAssert(!viewController.timer.timer.valid, "Timer wasn't invalidated on pause")
+        XCTAssert(!viewController.timer.timer.isValid, "Timer wasn't invalidated on pause")
     }
     
     func testClearButton() {
         viewController.clear(self)
-        XCTAssert(!viewController.timer.timer.valid, "Timer wasn't invalidated on clear")
+        XCTAssert(!viewController.timer.timer.isValid, "Timer wasn't invalidated on clear")
     }
     
 }

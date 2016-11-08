@@ -6,7 +6,7 @@ import UIKit
 
 protocol BackgroundManagerProtocol {
     func managerDidRequestStop()
-    func managerDidReceiveBackgroundDuration(elapsedSeconds: Int)
+    func managerDidReceiveBackgroundDuration(_ elapsedSeconds: Int)
 }
 
 class BackgroundManager: NSObject {
@@ -14,28 +14,28 @@ class BackgroundManager: NSObject {
     static var delegate: BackgroundManagerProtocol?
     
     static let backgroundKey = "time"
-    static let userDefaults = NSUserDefaults.standardUserDefaults()
+    static let userDefaults = UserDefaults.standard
     
     static func setBackgroundTime() {
-        let now = NSDate()
-        userDefaults.setObject(now, forKey: backgroundKey)
+        let now = Date()
+        userDefaults.set(now, forKey: backgroundKey)
         
         /** Debug printing **/
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.timeStyle = .FullStyle
-        print("backgrounded at: \(dateFormatter.stringFromDate(now))")
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .full
+        print("backgrounded at: \(dateFormatter.string(from: now))")
         
     }
     
-    static func getBackgroundTime() -> NSDate {
-        if let backgroundTime = userDefaults.objectForKey(backgroundKey) as? NSDate {
+    static func getBackgroundTime() -> Date {
+        if let backgroundTime = userDefaults.object(forKey: backgroundKey) as? Date {
             return backgroundTime
         }
-        return NSDate()
+        return Date()
     }
     
     static func appDurationInBackground() -> Int {
-        let elapsedTime = NSDate().timeIntervalSinceDate(getBackgroundTime())
+        let elapsedTime = Date().timeIntervalSince(getBackgroundTime())
         print("Elapsed time in seconds: \(elapsedTime)")
         return Int(elapsedTime) //TODO: - Round up or down here??
     }

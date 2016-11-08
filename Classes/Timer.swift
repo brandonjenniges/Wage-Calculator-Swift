@@ -5,19 +5,19 @@
 import Foundation
 
 protocol TimerProtocol {
-    func timerDidTick(elapsedSeconds: Int)
+    func timerDidTick(_ elapsedSeconds: Int)
     func timerDidReset()
 }
 
 class Timer: NSObject {
     
     var delegate: TimerProtocol?
-    var timer = NSTimer()
+    var timer = Foundation.Timer()
     
-    let tickInterval: NSTimeInterval = 1.0
+    let tickInterval: TimeInterval = 1.0
     var elapsedSeconds = 0
     
-    let formatter = NSNumberFormatter()
+    let formatter = NumberFormatter()
     
     override init() {
         super.init()
@@ -25,9 +25,9 @@ class Timer: NSObject {
     }
     
     func startTimer() {
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(tickInterval,
+        self.timer = Foundation.Timer.scheduledTimer(timeInterval: tickInterval,
             target: self,
-            selector: "onTick",
+            selector: #selector(Timer.onTick),
             userInfo: nil,
             repeats: true)
     }
@@ -46,7 +46,7 @@ class Timer: NSObject {
     }
     
     func onTick() {
-        elapsedSeconds++
+        elapsedSeconds += 1
         
         if let delegate = delegate {
             delegate.timerDidTick(elapsedSeconds)
@@ -56,7 +56,7 @@ class Timer: NSObject {
     func getTimeDisplay() -> String {
         let time = (hour: elapsedSeconds / 3600, minute: (elapsedSeconds % 3600) / 60, second: (elapsedSeconds % 3600) % 60)
         
-        let displayString = "\(formatter.stringFromNumber(time.hour)!):\(formatter.stringFromNumber(time.minute)!):\(formatter.stringFromNumber(time.second)!)"
+        let displayString = "\(formatter.string(from: NSNumber(value: time.hour))!):\(formatter.string(from: NSNumber(value: time.minute))!):\(formatter.string(from: NSNumber(value: time.second))!)"
         return displayString
     }
 }
