@@ -37,7 +37,7 @@ class BackgroundManager: NSObject {
     static func appDurationInBackground() -> Int {
         let elapsedTime = Date().timeIntervalSince(getBackgroundTime())
         print("Elapsed time in seconds: \(elapsedTime)")
-        return Int(elapsedTime) //TODO: - Round up or down here??
+        return Int(elapsedTime)
     }
     
     static func requestStop() {

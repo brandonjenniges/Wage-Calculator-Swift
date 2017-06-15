@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -14,36 +24,37 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-7U-95D" userLabel="Money View">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="342"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="373.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="7Gq-2P-QkR">
-                                        <rect key="frame" x="20" y="145" width="560" height="52"/>
+                                        <rect key="frame" x="20" y="160.5" width="335" height="52"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6aP-Pr-was">
-                                        <rect key="frame" x="10" y="207" width="580" height="125"/>
+                                        <rect key="frame" x="10" y="222.5" width="355" height="141"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
-                                        <color key="textColor" red="0.21176470588235294" green="0.27058823529411763" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.21176470588235294" green="0.27058823529411763" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuG-1n-5F7" userLabel="Settings View">
-                                        <rect key="frame" x="0.0" y="146" width="50" height="50"/>
+                                        <rect key="frame" x="0.0" y="161.5" width="50" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rounded_view" translatesAutoresizingMaskIntoConstraints="NO" id="vJC-SB-pGi">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngV-F4-Wt8">
                                                 <rect key="frame" x="-25" y="-25" width="100" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="setting"/>
                                                 <connections>
                                                     <action selector="openSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rDc-I5-25z"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="0H5-dp-REK"/>
                                             <constraint firstAttribute="width" constant="50" id="4Og-Nq-g1J"/>
@@ -54,7 +65,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="0.9137254901960784" alpha="0.10137774493243243" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="0.9137254901960784" alpha="0.10137774493243243" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="7Gq-2P-QkR" firstAttribute="leading" secondItem="BKJ-7U-95D" secondAttribute="leading" constant="20" id="J9q-SP-Nww"/>
                                     <constraint firstAttribute="trailing" secondItem="7Gq-2P-QkR" secondAttribute="trailing" constant="20" id="O70-fn-Wrv"/>
@@ -68,16 +79,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSB-sM-FdI" userLabel="Time View">
-                                <rect key="frame" x="0.0" y="342" width="600" height="214"/>
+                                <rect key="frame" x="0.0" y="373.5" width="375" height="233.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="0us-Z8-AsE">
-                                        <rect key="frame" x="10" y="10" width="580" height="194"/>
+                                        <rect key="frame" x="10" y="10" width="355" height="213.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.098039215686274508" green="0.80784313725490198" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.13027438521385193" green="0.77865225076675415" blue="0.58508563041687012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="0us-Z8-AsE" firstAttribute="leading" secondItem="gSB-sM-FdI" secondAttribute="leading" constant="10" id="27a-dR-NfR"/>
                                     <constraint firstItem="0us-Z8-AsE" firstAttribute="top" secondItem="gSB-sM-FdI" secondAttribute="top" constant="10" id="IpE-Mh-4fv"/>
@@ -86,27 +97,30 @@
                                 </constraints>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-dy-dKC">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="fJu-2C-dtM"/>
+                                    <constraint firstAttribute="height" constant="60" id="fJu-2C-dtM"/>
                                 </constraints>
                                 <items>
                                     <barButtonItem systemItem="play" id="X36-gH-yUn">
-                                        <color key="tintColor" red="0.098039215690000001" green="0.80784313730000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <color key="tintColor" red="0.13027438521385193" green="0.77865225076675415" blue="0.58508563041687012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="play:" destination="BYZ-38-t0r" id="tS7-7w-o3j"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ZuK-Ye-cX8"/>
                                     <barButtonItem systemItem="pause" id="0BB-zN-eRB">
-                                        <color key="tintColor" red="0.098039215690000001" green="0.80784313730000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <color key="tintColor" red="0.13027438521385193" green="0.77865225076675415" blue="0.58508563041687012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="pause:" destination="BYZ-38-t0r" id="Q2q-ge-vS0"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="U8t-WW-8T2"/>
                                     <barButtonItem systemItem="refresh" id="h75-Gb-i3x">
-                                        <color key="tintColor" red="0.098039215690000001" green="0.80784313730000001" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <color key="tintColor" red="0.13027438521385193" green="0.77865225076675415" blue="0.58508563041687012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="clear:" destination="BYZ-38-t0r" id="iRj-p3-KUQ"/>
                                         </connections>
@@ -114,7 +128,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gSB-sM-FdI" firstAttribute="top" secondItem="BKJ-7U-95D" secondAttribute="bottom" id="RRB-WI-ALa"/>
                             <constraint firstAttribute="trailing" secondItem="fhr-dy-dKC" secondAttribute="trailing" id="StX-l2-qyk"/>
@@ -132,6 +146,7 @@
                     <connections>
                         <outlet property="moneyLabel" destination="6aP-Pr-was" id="7Ta-MY-uCe"/>
                         <outlet property="moneyView" destination="BKJ-7U-95D" id="nZ1-Ti-VMZ"/>
+                        <outlet property="playButton" destination="X36-gH-yUn" id="f7r-xd-NLH"/>
                         <outlet property="settingsView" destination="AuG-1n-5F7" id="yLN-zm-v4f"/>
                         <outlet property="timeLabel" destination="0us-Z8-AsE" id="RBO-cr-KFz"/>
                     </connections>

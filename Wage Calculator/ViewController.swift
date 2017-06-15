@@ -6,12 +6,13 @@ import UIKit
 
 class ViewController: UIViewController, TimerProtocol, BackgroundManagerProtocol {
 
-    
     @IBOutlet weak var moneyView: UIView!
     @IBOutlet weak var settingsView: UIView!
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var moneyLabel: UILabel!
+    
+    @IBOutlet weak var playButton: UIBarButtonItem!
     
     let timer = Timer()
     let moneyCalculator = MoneyCalculator()
@@ -24,11 +25,6 @@ class ViewController: UIViewController, TimerProtocol, BackgroundManagerProtocol
         moneyLabel.text = moneyCalculator.getMoneyDisplay(0)
         
         print(MoneyCalculator.getSavedWage())
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func setupMoneyViewGradient() {
@@ -88,6 +84,7 @@ class ViewController: UIViewController, TimerProtocol, BackgroundManagerProtocol
     
     @IBAction func play(_ sender: AnyObject) {
         if MoneyCalculator.getSavedWage() > 0 {
+            self.playButton.isEnabled = false
             timer.startTimer()
         } else {
             displayWagePrompt(true)
@@ -96,10 +93,12 @@ class ViewController: UIViewController, TimerProtocol, BackgroundManagerProtocol
     
     @IBAction func pause(_ sender: AnyObject) {
         timer.pauseTimer()
+        self.playButton.isEnabled = true
     }
     
     @IBAction func clear(_ sender: AnyObject) {
         timer.restartTimer()
+        self.playButton.isEnabled = true
     }
     
     @IBAction func openSettings(_ sender: AnyObject) {
