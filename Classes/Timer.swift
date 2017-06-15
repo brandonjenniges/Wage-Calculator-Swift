@@ -45,7 +45,7 @@ class Timer: NSObject {
         }
     }
     
-    func onTick() {
+    @objc func onTick() {
         elapsedSeconds += 1
         
         if let delegate = delegate {
